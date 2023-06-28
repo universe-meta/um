@@ -2,11 +2,17 @@
 
 header {
   text-align: center;
+  background-color: gray; /* Replace 'gray' with your desired shade of gray */
 }
 
 header img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Adjust the width as per your requirement */
+  height: auto; /* Adjust the height as per your requirement */
+}
+
+.button {
+  display: block;
+  margin: 20px auto; /* Adjust the margin as per your requirement */
 }
