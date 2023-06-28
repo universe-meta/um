@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Staff Contact</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Staff Contact</h1>
-  
-  <form action="https://mail.google.com/mail/?view=cm&fs=1&to=universe-meta01@gmail.com&su=Subject%20Placeholder&body=Description%20Placeholder" method="POST">
-    <input type="text" name="title" placeholder="Title" required>
-    
-    <select name="category">
-      <option value="Bug">Bug</option>
-      <option value="Suggestion">Suggestion</option>
-    </select>
-    
-    <input type="email" name="email" placeholder="Email" required>
-    
-    <textarea name="description" placeholder="Description" required></textarea>
-    
-    <input type="submit" value="Submit">
-  </form>
+    <div class="container">
+        <h1>Welcome to the Index Page</h1>
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='register.html'">Register</button>
+    </div>
 </body>
+
 </html>
