@@ -5,21 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff Contact</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function sendEmail() {
+      var title = document.getElementById("title").value;
+      var category = document.getElementById("category").value;
+      var email = document.getElementById("email").value;
+      var description = document.getElementById("description").value;
+      
+      var subject = encodeURIComponent(title);
+      var body = encodeURIComponent(description);
+      
+      var emailLink = "mailto:universe-meta01@gmail.com?subject=" + subject + "&body=" + body;
+      window.location.href = emailLink;
+    }
+  </script>
 </head>
 <body>
   <h1>Staff Contact</h1>
   
-  <form action="https://mail.google.com/mail/?view=cm&to=universe.meta01@gmail.com" method="POST">
-    <input type="text" name="title" placeholder="Title" required>
+  <form onsubmit="event.preventDefault(); sendEmail();">
+    <input type="text" id="title" placeholder="Title" required>
     
-    <select name="category">
+    <select id="category">
       <option value="Bug">Bug</option>
       <option value="Suggestion">Suggestion</option>
     </select>
     
-    <input type="email" name="email" placeholder="Email" required>
+    <input type="email" id="email" placeholder="Email" required>
     
-    <textarea name="description" placeholder="Description" required></textarea>
+    <textarea id="description" placeholder="Description" required></textarea>
     
     <input type="submit" value="Submit">
   </form>
