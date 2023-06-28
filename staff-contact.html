@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Staff Contact</h1>
+  
+  <form action="https://mail.google.com/mail/?view=cm&to=universe-meta01@gmail.com" method="POST">
+    <input type="text" name="title" placeholder="Title" required>
+    
+    <select name="category">
+      <option value="Bug">Bug</option>
+      <option value="Suggestion">Suggestion</option>
+    </select>
+    
+    <input type="email" name="email" placeholder="Email" required>
+    
+    <textarea name="description" placeholder="Description" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
