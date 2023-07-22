@@ -1,0 +1,421 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>Unity C# Coding Tournament</title> 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .scoreboard {
+            margin: 30px auto;
+            max-width: 400px;
+        }
+
+        .scoreboard table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .scoreboard th, .scoreboard td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .scoreboard th {
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: #ffc107;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <h1>Unity C# Coding Tournament</h1> 
+  <div class="scoreboard"> 
+   <h1>Total Spectators: 90</h1> 
+   <div class="scoreboard"> 
+    <h1>Amount: $86</h1> 
+    <div class="scoreboard"> 
+     <table> 
+      <thead> 
+       <tr> 
+        <th>Rank</th> 
+        <th>Nickname</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td>1</td> 
+        <td>Racer27</td> 
+       </tr> 
+       <tr> 
+        <td>2</td> 
+        <td>MasterCoder</td> 
+       </tr> 
+       <tr> 
+        <td>3</td> 
+        <td>CodingNinja</td> 
+       </tr> 
+       <tr class="highlight"> 
+        <td>4</td> 
+        <td>Horn</td> 
+       </tr> <!-- Generate 89 random nicknames for the rest of the scoreboard --> 
+       <tr> 
+        <td>5</td> 
+        <td>CodeWarrior</td> 
+       </tr> 
+       <tr> 
+        <td>6</td> 
+        <td>GamerPro</td> 
+       </tr> 
+       <tr> 
+        <td>7</td> 
+        <td>PixelPirate</td> 
+       </tr> 
+       <tr> 
+        <td>8</td> 
+        <td>ByteBasher</td> 
+       </tr> 
+       <tr> 
+        <td>9</td> 
+        <td>ScriptSamurai</td> 
+       </tr> 
+       <tr> 
+        <td>10</td> 
+        <td>DebugDynamo</td> 
+       </tr> <!-- Continue generating random nicknames --> 
+       <tr> 
+        <td>11</td> 
+        <td>CSharpGuru</td> 
+       </tr> 
+       <tr> 
+        <td>12</td> 
+        <td>PixelMaster</td> 
+       </tr> 
+       <tr> 
+        <td>13</td> 
+        <td>CodingWizard</td> 
+       </tr> 
+       <tr> 
+        <td>14</td> 
+        <td>ByteBandit</td> 
+       </tr> 
+       <tr> 
+        <td>15</td> 
+        <td>GameDevLegend</td> 
+       </tr> 
+       <tr> 
+        <td>16</td> 
+        <td>ScriptSensei</td> 
+       </tr> 
+       <tr> 
+        <td>17</td> 
+        <td>BrZ</td> 
+       </tr> 
+       <tr> 
+        <td>18</td> 
+        <td>SussyBaka</td> 
+       </tr> 
+       <tr> 
+        <td>19</td> 
+        <td>Stfu</td> 
+       </tr> 
+       <tr> 
+        <td>20</td> 
+        <td>Genio2003</td> 
+       </tr> 
+       <tr> 
+        <td>21</td> 
+        <td>CR7</td> 
+       </tr> 
+       <tr> 
+        <td>22</td> 
+        <td>CaptainAss</td> 
+       </tr> 
+       <tr> 
+        <td>23</td> 
+        <td>JojoBizzzzzz</td> 
+       </tr> 
+       <tr> 
+        <td>24</td> 
+        <td>LFortNitee22</td> 
+       </tr> 
+       <tr> 
+        <td>25</td> 
+        <td>OLIONCIR22</td> 
+       </tr> 
+       <tr> 
+        <td>26</td> 
+        <td>PUSSYxD</td> 
+       </tr> <!-- Continue generating random nicknames --> <!-- ... --> 
+       <tr> 
+        <td>27</td> 
+        <td>Alchiter</td> 
+       </tr> 
+       <tr> 
+        <td>28</td> 
+        <td>Nanii2</td> 
+       </tr> 
+       <tr> 
+        <td>29</td> 
+        <td>Rengoku09</td>
+       </tr> 
+       <tr> 
+        <td>30</td> 
+        <td>Cat</td> 
+       </tr> 
+       <tr> 
+        <td>31</td> 
+        <td>Hell_world</td> 
+       </tr> 
+       <tr> 
+        <td>32</td> 
+        <td>RightyfN</td> 
+       </tr> 
+       <tr> 
+        <td>33</td> 
+        <td>Shockbyte</td> 
+       </tr> 
+       <tr> 
+        <td>34</td> 
+        <td>PP</td> 
+       </tr> 
+       <tr> 
+        <td>35</td> 
+        <td>CrushinCrash</td> 
+       </tr> <!-- Continue generating random nicknames --> 
+       <tr> 
+        <td>36</td> 
+        <td>SG0300</td> 
+       </tr> 
+       <tr> 
+        <td>37</td>
+        <td>SimpleAsync</td>
+       </tr> 
+       <tr> 
+        <td>38</td> 
+        <td>Binary0</td> 
+       </tr> 
+       <tr> 
+        <td>39</td> 
+        <td>regames</td> 
+       </tr> 
+       <tr> 
+        <td>40</td> 
+        <td>stopStaringDickhead</td> 
+       </tr> 
+       <tr> 
+        <td>41</td> 
+        <td>Porn</td> 
+       </tr> 
+       <tr> 
+        <td>42</td> 
+        <td>Z0Bolt</td> 
+       </tr> 
+       <tr> 
+        <td>43</td> 
+        <td>SchoolQuitter</td> 
+       </tr> 
+       <tr> 
+        <td>44</td> 
+        <td>GG090</td> 
+       </tr> 
+       <tr> 
+        <td>45</td> 
+        <td>EatSleepOnly5</td> 
+       </tr> 
+       <tr> 
+        <td>46</td> 
+        <td>Player002kJ78S5vwbU</td> 
+       </tr> 
+       <tr> 
+        <td>47</td> 
+        <td>CryHarder69</td> 
+       </tr> 
+       <tr> 
+        <td>48</td> 
+        <td>SirKinda</td> 
+       </tr> 
+       <tr> 
+        <td>49</td> 
+        <td>BluPle</td> 
+       </tr> 
+       <tr> 
+        <td>50</td> 
+        <td>OrangeTeamNotMilk</td> 
+       </tr> 
+       <tr> 
+        <td>51</td> 
+        <td>Drill9</td> 
+       </tr> 
+       <tr> 
+        <td>52</td> 
+        <td>CloudSuckerLmao3</td> 
+       </tr> 
+       <tr> 
+        <td>53</td> 
+        <td>Hackerxx02</td> 
+       </tr> 
+       <tr>
+        <td>54</td> 
+        <td>Xx8ELEMENT8xX</td> 
+       </tr> 
+       <tr> 
+        <td>55</td> 
+        <td>Mr_Devil666</td> 
+       </tr> 
+       <tr> 
+        <td>56</td>
+        <td>ItsAnwar</td> 
+       </tr> 
+       <tr> 
+        <td>57</td> 
+        <td>PoorBozo</td> 
+       </tr> 
+       <tr> 
+        <td>58</td> 
+        <td>Innya</td> 
+       </tr> 
+       <tr> 
+        <td>59</td> 
+        <td>Debug.Log</td> 
+       </tr> <!-- Continue generating random nicknames --> 
+       <tr> 
+        <td>60</td> 
+        <td>$$sudomyMSG</td> 
+       </tr> 
+       <tr> 
+        <td>61</td> 
+        <td>mario638</td> 
+       </tr> 
+       <tr> 
+        <td>62</td> 
+        <td>LeVitaly</td> 
+       </tr> 
+       <tr> 
+        <td>63</td> 
+        <td>Tracking02Money</td> 
+       </tr> 
+       <tr> 
+        <td>64</td> 
+        <td>BestOMG</td> 
+       </tr> 
+       <tr> 
+        <td>65</td> 
+        <td>isKingNeverDies</td> 
+       </tr> 
+       <tr> 
+        <td>66</td> 
+        <td>Russia_noob</td> 
+       </tr> 
+       <tr> 
+        <td>67</td> 
+        <td>AmericanDev12</td> 
+       </tr> 
+       <tr> 
+        <td>68</td> 
+        <td>CreamNoIce</td> 
+       </tr> 
+       <tr> 
+        <td>69</td> 
+        <td>MessiIsA$$</td> 
+       </tr> 
+       <tr> 
+        <td>70</td> 
+        <td>RightFunky008</td> 
+       </tr> 
+       <tr> 
+        <td>71</td> 
+        <td>Marting660</td> 
+       </tr> 
+       <tr> 
+        <td>72</td> 
+        <td>CancerousBody</td> 
+       </tr> 
+       <tr> 
+        <td>73</td> 
+        <td>BuddyLol</td> 
+       </tr> 
+       <tr> 
+        <td>74</td> 
+        <td>ShrinkingZone</td> 
+       </tr> 
+       <tr> 
+        <td>75</td> 
+        <td>Cazzone</td> 
+       </tr> <!-- Continue generating random nicknames --> <!-- ... --> 
+       <tr> 
+        <td>76</td> 
+        <td>3Underwears</td> 
+       </tr> 
+       <tr> 
+        <td>77</td> 
+        <td>NinjaHacker3</td> 
+       </tr> 
+       <tr> 
+        <td>78</td> 
+        <td>HackR</td> 
+       </tr> 
+       <tr> 
+        <td>79</td> 
+        <td>CrabsDick</td> 
+       </tr> 
+       <tr> 
+        <td>80</td> 
+        <td>ScorpionAnt999</td> 
+       </tr> 
+       <tr> 
+        <td>81</td> 
+        <td>PowerOf2latekids</td> 
+       </tr> 
+       <tr> 
+        <td>82</td> 
+        <td>GigaChad4444</td> 
+       </tr> 
+       <tr> 
+        <td>83</td> 
+        <td>WhatsUp</td> 
+       </tr> 
+       <tr> 
+        <td>84</td> 
+        <td>DebuggingVS2</td> 
+       </tr> <!-- Continue generating random nicknames --> 
+       <tr> 
+        <td>85</td> 
+        <td>0G.S0</td> 
+       </tr> 
+       <tr> 
+        <td>86</td> 
+        <td>BlockMoney6</td> 
+       </tr> 
+       <tr> 
+        <td>87</td> 
+        <td>Shit.com</td> 
+       </tr> 
+       <tr> 
+        <td>88</td> 
+        <td>FliesHigh</td> 
+       </tr> 
+       <tr> 
+        <td>89</td> 
+        <td>WhoIsReadingGay123</td> 
+       </tr> 
+       <tr>
+        <td>90</td> 
+        <td>NoobyParrto4</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div>
+  </div>
+ </body>
+  </html>
